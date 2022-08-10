@@ -38,6 +38,11 @@ def hangman():
 
         else:
             print("Invalid character, please use a letter from the alphabet.")
+    if lives == 0:
+        print("You lose! You have run out of lives! The word was", word)
+    else:
+        print ("Congratulations! You guessed the correct word", word, "!")
+
 
 userInput = input("Type Anything:")
 print(userInput)
